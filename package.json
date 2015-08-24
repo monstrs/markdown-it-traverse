@@ -1,0 +1,25 @@
+{
+  "name": "markdown-it-traverse",
+  "version": "0.1.0",
+  "description": "Traverse markdown-it",
+  "main": "dist",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register",
+    "prepublish": "rm -rf dist && babel -d dist lib",
+    "lint": "eslint lib/index.js test/test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "markdown-it": "^4.4",
+    "eslint": "^1.2.1",
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5",
+    "babel": "^v5.8.21",
+    "babel-core": "^5.8.22",
+    "babel-runtime": "^5.8.20",
+    "babel-eslint": "^4.0.10",
+    "eslint-config-airbnb": "^0.0.8"
+  }
+}
