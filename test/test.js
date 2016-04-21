@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import md from 'markdown-it'
 import fs from 'fs'
-import mdTraverse from './../lib'
+import mdTraverse from './../src'
 
 describe('markdown-it-traverse', () => {
   it('heading tokens', () => {

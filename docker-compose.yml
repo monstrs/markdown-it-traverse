@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+  ide:
+    image: monstrs/cloud9
+    volumes:
+      - ./:/workspace
+    ports:
+      - "8492:80"
+
+  npm:
+    image: node
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    entrypoint: npm

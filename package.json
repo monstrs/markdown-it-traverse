@@ -2,11 +2,11 @@
   "name": "markdown-it-traverse",
   "version": "0.1.0",
   "description": "Traverse markdown-it",
-  "main": "dist",
+  "main": "lib",
   "scripts": {
     "test": "mocha --compilers js:babel/register",
-    "prepublish": "rm -rf dist && babel -d dist lib",
-    "lint": "eslint lib/index.js test/test.js"
+    "build": "rm -rf lib && babel -d lib src",
+    "lint": "eslint src/index.js test/test.js"
   },
   "author": "",
   "license": "MIT",
